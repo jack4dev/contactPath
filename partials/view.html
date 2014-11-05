@@ -1,0 +1,45 @@
+<div class="col1">
+    <div>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h2>{{contact.name}}</h2>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <img src="img/profile_image.png" alt="">
+                </td>
+                <td>
+                    <div class="edit"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remove"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="col2">
+    <p class="email" ng-show="contact.email">{{contact.email}}</p>
+
+    <table>
+        <tr>
+            <td>
+                <p class="phone" ng-show="contact.phone"></p>
+            <td>
+            <td>
+                <input class="phone" type="text" size="40" readonly value={{contact.phone}}>
+            </td>
+            <td>
+                <div class="edit-small"></div>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr/>
+<hr/>
+<a class="btn btn-left back" href="#/">Go Back</a>
+<a class="btn " href="#/edit/{{contact.id}}">Edit</a>
